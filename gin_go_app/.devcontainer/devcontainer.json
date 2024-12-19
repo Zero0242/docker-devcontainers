@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Go",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "golang:1.23-alpine",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.Go",
+				"formulahendry.code-runner",
+				"IgorSbitnev.error-gutters",
+				"premparihar.gotestexplorer",
+				"766b.go-outliner",
+				"zxh404.vscode-proto3",
+				"honnamkuan.golang-snippets"
+			]
+		}
+	}
+}
