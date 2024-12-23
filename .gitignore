@@ -1,4 +1,2 @@
 .DS_STORE
-navigation_app/
-react_expo_router/
-python_app/
+dev/*
