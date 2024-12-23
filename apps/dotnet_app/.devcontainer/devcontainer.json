@@ -10,7 +10,8 @@
 				"editor.formatOnSave": true
 			},
 			"extensions": [
-				"ms-dotnettools.csdevkit"
+				"ms-dotnettools.csdevkit",
+				"humao.rest-client"
 			]
 		}
 	},

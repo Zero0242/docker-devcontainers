@@ -14,7 +14,8 @@
 				"mathiasfrohlich.Kotlin",
 				"esafirm.kotlin-formatter",
 				"formulahendry.code-runner",
-				"vmware.vscode-boot-dev-pack"
+				"vmware.vscode-boot-dev-pack",
+				"humao.rest-client"
 			]
 		}
 	}
