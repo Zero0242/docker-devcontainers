@@ -1,0 +1,25 @@
+{
+	"name": "node-cron-app",
+	"version": "1.0.0",
+	"main": "app.js",
+	"author": "Zero0242 <pedrocorream66@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "babel-node app.js",
+		"start:deploy": "node dist/app.js",
+		"build": "babel . -d dist --ignore node_modules,tests,generated",
+		"dev": "nodemon app.js --exec babel-node",
+		"test": "jest --verbose --watch-all"
+	},
+	"dependencies": {
+		"node-cron": "^3.0.3"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.25.9",
+		"@babel/core": "^7.26.0",
+		"@babel/node": "^7.26.0",
+		"@babel/preset-env": "^7.26.0",
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.7"
+	}
+}

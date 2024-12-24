@@ -1,0 +1,23 @@
+{
+	// Con esto ejecutamos los comandos con F5
+	"configurations": [
+		{
+			"command": "npm run dev",
+			"name": "Modo desarrollo",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"command": "npm run test",
+			"name": "Modo pruebas",
+			"request": "launch",
+			"type": "node-terminal"
+		},
+		{
+			"command": "npm start",
+			"name": "Modo produccion",
+			"request": "launch",
+			"type": "node-terminal"
+		}
+	]
+}

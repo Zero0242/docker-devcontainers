@@ -1,0 +1,14 @@
+node_modules/
+
+yarn.lock
+package-lock.json
+.DS_Store
+
+# Carpeta de archivos generados
+
+dist/
+generated/
+.env
+# Evitar la subida a github
+*.db
+*-journal

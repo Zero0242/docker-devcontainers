@@ -1,0 +1,28 @@
+# Referencia https://hub.docker.com/_/node/tags?name=alpine
+# Step 1: construccion de dependencias, todos los paquetes
+FROM node:21-alpine3.20 as desarrollo
+WORKDIR /app
+COPY package.json .
+RUN npm install
+
+# Step 2: tomamos el codigo fuente y las dependencias para crear el build
+FROM node:21-alpine3.20 as construccion
+WORKDIR /app
+COPY --from=desarrollo /app/node_modules ./node_modules
+COPY . .
+# RUN npm run test
+RUN npm run build
+
+# Step 3: construccion de dependencias de produccion
+FROM node:21-alpine3.20 as produccion
+WORKDIR /app
+COPY package.json .
+RUN npm install --prod
+
+# Step 4: correr la app con lo minimo y necesario
+FROM node:21-alpine3.20 as final
+WORKDIR /app
+COPY --from=produccion /app/node_modules ./node_modules
+COPY --from=construccion /app/node_modules ./dist
+# Ejecucion de la app
+CMD ["node", "./dist/app.js"]

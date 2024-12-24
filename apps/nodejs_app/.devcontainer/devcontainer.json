@@ -1,0 +1,14 @@
+{
+    "dockerFile": "dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "imgildev.vscode-auto-barrel",
+                "fractalbrew.backticks",
+                "aaron-bond.better-comments",
+                "adpyke.codesnap",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
