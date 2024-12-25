@@ -57,3 +57,4 @@ Extensiones especificas de docker , devcontainer y k8s.
 - `jeff-hykin.better-dockerfile-syntax` [Better DockerFile Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-dockerfile-syntax)
 - `ms-vscode-remote.remote-containers`[Devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - `ms-azuretools.vscode-docker` [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- `ms-kubernetes-tools.vscode-kubernetes-tools` [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
