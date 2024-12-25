@@ -5,8 +5,50 @@
 
 # Pruebas con devcontainers
 
-Algunas pruebas para probar los devcontainers en diferentes tipos de proyectos
+Algunas pruebas para probar los devcontainers en diferentes tipos de proyectos, cada app de la carpeta `/apps` tienen sus propias configuraciones de entorno
 
 ## Requisitos
 
 1. [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+# Apps
+
+### Gin Go App
+
+Configuracion de un devcontainer sencillo para probar un backend el lenguaje `Go`
+
+| Lenguaje | Imagen             | Observaciones                             |
+| -------- | ------------------ | ----------------------------------------- |
+| Go       | golang:1.23-alpine | Uso directo de la imagen sin alteraciones |
+
+### Dotnet App
+
+Entorno de `dotnet` para probar un api sencillo.
+
+| Lenguaje | Imagen                                       | Observaciones                                      |
+| -------- | -------------------------------------------- | -------------------------------------------------- |
+| C#       | mcr.microsoft.com/devcontainers/dotnet:1-8.0 | Configuracion creada con la extension devcontainer |
+
+### Kotlin Spring Boot
+
+Configuración de un entorno de desarrollo para una aplicación de Spring Boot con `Kotlin`.
+
+| Lenguaje | Imagen                             | Observaciones                          |
+| -------- | ---------------------------------- | -------------------------------------- |
+| Kotlin   | openjdk:24-ea-17-jdk-slim-bullseye | Añadidas herramientas como Maven y Git |
+
+### Java Spring Boot
+
+Configuración de un entorno de desarrollo para una aplicación de Spring Boot con `Java`.
+
+| Lenguaje | Imagen                             | Observaciones                          |
+| -------- | ---------------------------------- | -------------------------------------- |
+| Java     | openjdk:24-ea-17-jdk-slim-bullseye | Añadidas herramientas como Maven y Git |
+
+### Node.js App
+
+Configuración de un entorno de desarrollo para una aplicación de `Node.js`. Aca se personaliza la imagen con `oh my zsh` y `powerlevel10k`
+
+| Lenguaje | Imagen         | Observaciones                                                                      |
+| -------- | -------------- | ---------------------------------------------------------------------------------- |
+| Node.js  | node:23-alpine | Instaladas herramientas como Git, Curl, Zip, Unzip y configurado Zsh con Oh My Zsh |
