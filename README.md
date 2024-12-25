@@ -7,6 +7,8 @@
 
 Algunas pruebas para probar los devcontainers en diferentes tipos de proyectos, cada app de la carpeta `/apps` tienen sus propias configuraciones de entorno
 
+- Referencia a extensiones [aquí](extensions.md)
+
 ## Requisitos
 
 1. [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
@@ -52,3 +54,17 @@ Configuración de un entorno de desarrollo para una aplicación de `Node.js`. Ac
 | Lenguaje | Imagen         | Observaciones                                                                      |
 | -------- | -------------- | ---------------------------------------------------------------------------------- |
 | Node.js  | node:23-alpine | Instaladas herramientas como Git, Curl, Zip, Unzip y configurado Zsh con Oh My Zsh |
+
+### Gin Gorilla App
+
+Entorno de desarrollo de `go` + `postgres` para desarrollo de backend con **gorilla + gorm + air**
+
+- Docker Compose (app): solo el servicio de postgresql
+- Docker Compose (devcontainer): combinacion del entorno de desarrollo y la base de datos
+
+> La extension de postgresql nos permite ver si podemos conectarnos a la base de datos desde el devcontainer
+
+| Servicio | Imagen             | Observaciones                   |
+| -------- | ------------------ | ------------------------------- |
+| Go       | golang:1.23-alpine | Entorno con oh-my-zsh y plugins |
+| Postgres | postgres:14-alpine | Postgresql                      |
