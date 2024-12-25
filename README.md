@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/" target="blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="200" alt="App Logo" /></a>
+  <a href="https://code.visualstudio.com/docs/remote/containers" target="blank">
+  <img src="https://miro.medium.com/v2/resize:fit:719/1*vmW2Gu0ElsVxq79gYRLTlw.png" height="200" alt="Devcontainers Logo" /></a>
 </p>
 
 # Pruebas con devcontainers
