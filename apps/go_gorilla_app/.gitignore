@@ -37,3 +37,7 @@ Gopkg.toml
 
 # Air temporary files
 tmp/
+
+# Configurations
+
+.env
