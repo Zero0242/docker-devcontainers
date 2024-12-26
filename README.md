@@ -55,7 +55,7 @@ Configuración de un entorno de desarrollo para una aplicación de `Node.js`. Ac
 | -------- | -------------- | ---------------------------------------------------------------------------------- |
 | Node.js  | node:23-alpine | Instaladas herramientas como Git, Curl, Zip, Unzip y configurado Zsh con Oh My Zsh |
 
-### Gin Gorilla App
+### Go Gorilla App
 
 Entorno de desarrollo de `go` + `postgres` para desarrollo de backend con **gorilla + gorm + air**
 
