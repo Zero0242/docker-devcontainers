@@ -26,7 +26,6 @@ Extensiones de uso general que pueden ser utilidades o temas, recomendado usar a
 
 - `formulahendry.code-runner` [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 - `IgorSbitnev.error-gutters` [ErrorGutters](https://marketplace.visualstudio.com/items?itemName=IgorSbitnev.error-gutters)
-- `esbenp.prettier-vscode` [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - `EliverLara.andromeda` [Andromeda](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda)
 - `shalldie.background` [background](https://marketplace.visualstudio.com/items?itemName=shalldie.background)
 - `aaron-bond.better-comments` [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
@@ -46,8 +45,10 @@ Extensiones de uso general que pueden ser utilidades o temas, recomendado usar a
 
 Extensiones que son utiles para el desarrollo de api en general
 
+- `rohinivsenthil.postcode` [Postcode](https://marketplace.visualstudio.com/items?itemName=rohinivsenthil.postcode)
 - `humao.rest-client` [REST CLIENT](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 - `ckolkman.vscode-postgres` [PostgreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres)
+- `cweijan.vscode-database-client2` [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
 - `zxh404.vscode-proto3` [Proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3)
 
 ## Docker
