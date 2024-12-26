@@ -1,0 +1,16 @@
+# Build
+FROM golang:1.23-alpine as build
+WORKDIR /app
+
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN go build -o main .
+
+# Release
+FROM alpine:3.21.0 as run
+WORKDIR /app
+COPY --from=build /app/main ./main
+ENV PORT=8080
+EXPOSE 8080
+CMD ["./main"]

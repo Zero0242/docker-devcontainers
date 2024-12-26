@@ -1,0 +1,35 @@
+services:
+  app:
+    image: gorilla_app:1.0.3
+    container_name: app_container
+    build:
+      context: .
+      dockerfile: dockerfile
+    restart: unless-stopped
+    depends_on:
+      - database
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_PORT: 5432
+      DATABASE_HOST: postgres_container
+      DATABASE_USER: gorm_postgres_agent
+      DATABASE_PASS: 123456
+      DATABASE_NAME: gorilla_db
+
+  database:
+    image: postgres:14-alpine
+    container_name: postgres_container
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: gorm_postgres_agent
+      POSTGRES_DB: gorilla_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - database-data:/var/lib/postgresql/data
+
+volumes:
+  database-data:
+    external: false

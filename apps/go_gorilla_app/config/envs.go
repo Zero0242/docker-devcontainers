@@ -33,7 +33,7 @@ var EnvMap EnvVars
 func GetEnvVars() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatalf("Error loading .env file")
+		log.Println("Error loading .env file")
 	}
 
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
