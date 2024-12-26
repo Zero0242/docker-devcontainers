@@ -1,0 +1,16 @@
+@baseURL= {{$dotenv HOST}}
+
+### Obtiene listado de usuarios
+GET {{baseURL}}/api/users
+Authorization: Bearer test_token
+
+### Obtiene 1 usuario
+GET {{baseURL}}/api/users/5
+
+### Crea 1 usuario
+POST {{baseURL}}/api/users
+
+
+
+### Elimina 1 usuario
+DELETE {{baseURL}}/api/users/4

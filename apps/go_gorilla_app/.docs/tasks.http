@@ -1,0 +1,22 @@
+@baseURL= {{$dotenv HOST}}
+
+### Obtiene listado de usuarios
+GET {{baseURL}}/api/tasks
+Authorization: Bearer test_token
+
+### Obtiene 1 usuario
+GET {{baseURL}}/api/tasks/1
+
+### Crea 1 usuario
+POST {{baseURL}}/api/tasks
+Content-Type: application/json
+
+{
+	"Title": "Learn Go",
+	"Description": "Study for at least an hour a  day",
+	"Done": false,
+	"UserID": 5
+}
+
+### Elimina 1 usuario
+DELETE {{baseURL}}/api/tasks/4

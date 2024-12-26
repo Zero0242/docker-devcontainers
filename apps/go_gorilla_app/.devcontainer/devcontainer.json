@@ -5,6 +5,15 @@
 	// Extensiones
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				}
+			},
 			"extensions": [
 				"golang.Go",
 				"formulahendry.code-runner",
@@ -15,7 +24,7 @@
 				"honnamkuan.golang-snippets",
 				"humao.rest-client",
 				"esbenp.prettier-vscode",
-				"ckolkman.vscode-postgres"
+				"cweijan.vscode-database-client2"
 			]
 		}
 	},

@@ -1,0 +1,3 @@
+@baseURL= {{$dotenv HOST}}
+
+GET {{baseURL}}
