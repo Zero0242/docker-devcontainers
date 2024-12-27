@@ -1,0 +1,25 @@
+FROM php:8.2-alpine3.20
+WORKDIR /app
+
+# Paquetes
+RUN apk add php-curl php-xml git curl zsh nano nodejs npm -y --no-cache
+
+# Composer + Laravel
+RUN  php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
+    && php composer-setup.php \
+    && mv composer.phar /usr/bin/composer \
+    && composer global require laravel/installer \
+    && rm composer-setup.php
+
+# Exponer Laravel
+ENV PATH="$PATH:/root/.composer/vendor/bin"
+
+# ZSH y oh my zsh
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
+    && mkdir -p ~/.plugins/zsh-autosuggestions \
+    && mkdir -p ~/.plugins/zsh-syntax-highlighting \
+    && git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.plugins/zsh-autosuggestions \ 
+    && echo "source ~/.plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.zshrc \
+    && git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.plugins/zsh-syntax-highlighting \ 
+    && echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc

@@ -1,0 +1,11 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: php_dev_container
+    command: sleep infinity
+    environment:
+      - ZSH_THEME="candy"
+    volumes:
+      - ../:/app:cached
