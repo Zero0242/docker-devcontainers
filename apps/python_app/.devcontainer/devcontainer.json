@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python 3",
+	"customizations": {
+		"settings": {
+			"editor.formatOnSave": true,
+			"terminal.integrated.defaultProfile.linux": "zsh",
+			"terminal.integrated.profiles.linux": {
+				"zsh": {
+					"path": "/bin/zsh"
+				}
+			}
+		},
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.isort",
+				"ms-python.vscode-pylance",
+				"ms-python.debugpy",
+				"ms-python.autopep8",
+				"ms-python.pylint",
+				// "tushortz.python-extended-snippets",
+				"LittleFoxTeam.vscode-python-test-adapter",
+				"njpwerner.autodocstring",
+				/* Rest */
+				"formulahendry.code-runner",
+				"IgorSbitnev.error-gutters",
+				"humao.rest-client",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
+	/* Devcontainer */
+	// Devcontainer y base de datos
+	"dockerComposeFile": [
+		"docker-compose.yaml",
+		"../docker-compose.yaml"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/app",
+	"postCreateCommand": "pip install -r requirements.txt"
+}

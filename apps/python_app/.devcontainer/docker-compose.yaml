@@ -1,0 +1,7 @@
+services:
+  devcontainer:
+    build: .
+    container_name: python_devcontainer
+    volumes:
+      - ..:/workspaces/app:cached
+    command: sleep infinity

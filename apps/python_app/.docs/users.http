@@ -1,0 +1,32 @@
+@baseURL = http://127.0.0.1:8000
+
+### Get users
+GET {{baseURL}}/api/v1/users
+
+### Get user by id
+GET {{baseURL}}/api/v1/users/1
+
+### Get user by id
+POST {{baseURL}}/api/v1/users
+Content-Type: application/json
+
+{
+    "username":"Dart",
+    "lastname":"Flutter",
+    "email":"dart@email.com"
+}
+
+
+### Get user by id
+PATCH  {{baseURL}}/api/v1/users/1
+Content-Type: application/json
+
+{
+    "email": "golang@email.com",
+    "lastname": "Gopher",
+    "username": "Golang"
+}
+
+
+### Get user by id
+DELETE  {{baseURL}}/api/v1/users/3

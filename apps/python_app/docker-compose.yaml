@@ -1,0 +1,16 @@
+services:
+  database:
+    image: postgres:14-alpine
+    container_name: postgres_container
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: python_posgres_agent
+      POSTGRES_DB: flask_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - database-data:/var/lib/postgresql/data
+
+volumes:
+  database-data:
+    external: false
