@@ -13,6 +13,10 @@ Algunas pruebas para probar los devcontainers en diferentes tipos de proyectos, 
 
 1. [devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
+## Referencias
+
+1. [Trabajando con Devcontainers](https://learn.microsoft.com/en-us/samples/microsoft/vscode-remote-try-dab/devcontainer/)
+
 # Apps
 
 ### Gin Go App
