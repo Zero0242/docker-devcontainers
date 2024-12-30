@@ -1,21 +1,10 @@
-FROM php:8.2-alpine3.20
-WORKDIR /app
+FROM openjdk:24-ea-17-jdk-slim-bullseye
+WORKDIR /workspaces/app
 
-# Paquetes
-RUN apk add php-curl php-xml git curl zsh nano nodejs npm -y --no-cache
+# Instalaciones
+RUN apt-get update && apt-get install -y maven git curl zsh && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Composer + Laravel
-RUN  php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
-    && php composer-setup.php \
-    && mv composer.phar /usr/bin/composer \
-    && composer global require laravel/installer \
-    && rm composer-setup.php
-
-# Exponer Laravel
-ENV PATH="$PATH:/root/.composer/vendor/bin"
-
-# ZSH y oh my zsh
-
+# Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
     && mkdir -p ~/.plugins/zsh-autosuggestions \
     && mkdir -p ~/.plugins/zsh-syntax-highlighting \

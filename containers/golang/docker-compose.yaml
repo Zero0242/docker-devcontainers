@@ -1,0 +1,7 @@
+services:
+  devcontainer:
+    build: .
+    container_name: go_devcontainer
+    volumes:
+      - ..:/workspaces/app:cached
+    command: sleep infinity

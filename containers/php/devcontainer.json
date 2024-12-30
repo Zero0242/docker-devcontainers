@@ -1,0 +1,35 @@
+{
+    "name": "PHP Devcontainer",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "/bin/zsh"
+                    }
+                }
+            },
+            "extensions": [
+                /* PHP */
+                "bmewburn.vscode-intelephense-client",
+                /* Laravel */
+                "onecentlin.laravel-extension-pack",
+                "bradlc.vscode-tailwindcss",
+                /* Tools */
+                "esbenp.prettier-vscode",
+                "formulahendry.code-runner",
+                "IgorSbitnev.error-gutters",
+                "humao.rest-client",
+                "qwtel.sqlite-viewer"
+            ]
+        }
+    },
+    /* Devcontainer */
+    "dockerComposeFile": [
+        "docker-compose.yaml"
+    ],
+    "service": "devcontainer",
+    "workspaceFolder": "/workspaces/app"
+}

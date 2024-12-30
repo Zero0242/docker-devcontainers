@@ -1,5 +1,5 @@
 FROM php:8.2-alpine3.20
-WORKDIR /app
+WORKDIR /workspaces/app
 
 # Paquetes
 RUN apk add php-curl php-xml git curl zsh nano nodejs npm -y --no-cache
@@ -15,7 +15,6 @@ RUN  php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
 ENV PATH="$PATH:/root/.composer/vendor/bin"
 
 # ZSH y oh my zsh
-
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
     && mkdir -p ~/.plugins/zsh-autosuggestions \
     && mkdir -p ~/.plugins/zsh-syntax-highlighting \

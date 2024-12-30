@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go
+{
+	"name": "Go Devcontainer",
+	// Extensiones
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				}
+			},
+			"extensions": [
+				/* Go language */
+				"golang.Go",
+				"premparihar.gotestexplorer",
+				"766b.go-outliner",
+				"honnamkuan.golang-snippets",
+				/* Tools */
+				"formulahendry.code-runner",
+				"IgorSbitnev.error-gutters",
+				"humao.rest-client",
+				"esbenp.prettier-vscode",
+				"cweijan.vscode-database-client2"
+			]
+		}
+	},
+	// Devcontainer 
+	"dockerComposeFile": [
+		"docker-compose.yaml"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/app"
+}

@@ -1,21 +1,10 @@
-FROM php:8.2-alpine3.20
-WORKDIR /app
+FROM golang:1.23-alpine
+WORKDIR /workspaces/app
 
-# Paquetes
-RUN apk add php-curl php-xml git curl zsh nano nodejs npm -y --no-cache
+# DEPS
+RUN apk update && apk upgrade && apk add --no-cache git curl zsh
 
-# Composer + Laravel
-RUN  php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
-    && php composer-setup.php \
-    && mv composer.phar /usr/bin/composer \
-    && composer global require laravel/installer \
-    && rm composer-setup.php
-
-# Exponer Laravel
-ENV PATH="$PATH:/root/.composer/vendor/bin"
-
-# ZSH y oh my zsh
-
+# OH MY ZSH
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
     && mkdir -p ~/.plugins/zsh-autosuggestions \
     && mkdir -p ~/.plugins/zsh-syntax-highlighting \
@@ -23,3 +12,5 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh
     && echo "source ~/.plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc \
     && git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.plugins/zsh-syntax-highlighting \ 
     && echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
+RUN go install github.com/air-verse/air@latest
