@@ -15,7 +15,7 @@
 		"vscode": {
 			"extensions": [
 				/* Java + Kotlin */
-				"mathiasfrohlich.Kotlin",
+				"fwcd.kotlin",
 				"vscjava.vscode-java-pack",
 				"vmware.vscode-boot-dev-pack",
 				/* Rest */
@@ -27,7 +27,7 @@
 		}
 	},
 	/* Devcontainer */
-	// Devcontainer y base de datos
+	// Devcontainer
 	"dockerComposeFile": [
 		"docker-compose.yaml"
 	],

@@ -1,22 +1,36 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/java
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Java",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {
-		"dockerfile": "dockerfile"
-	},
-	// Agregar Extensiones
+	"name": "Kotlin Devcontainer",
 	"customizations": {
+		"settings": {
+			"editor.formatOnSave": true,
+			"terminal.integrated.defaultProfile.linux": "zsh",
+			"terminal.integrated.profiles.linux": {
+				"zsh": {
+					"path": "/bin/zsh"
+				}
+			}
+		},
 		"vscode": {
 			"extensions": [
+				/* Java + Kotlin */
+				"fwcd.kotlin",
 				"vscjava.vscode-java-pack",
-				"mathiasfrohlich.Kotlin",
-				"esafirm.kotlin-formatter",
-				"formulahendry.code-runner",
 				"vmware.vscode-boot-dev-pack",
-				"humao.rest-client"
+				/* Rest */
+				"formulahendry.code-runner",
+				"IgorSbitnev.error-gutters",
+				"humao.rest-client",
+				"esbenp.prettier-vscode"
 			]
 		}
-	}
+	},
+	/* Devcontainer */
+	// Devcontainer
+	"dockerComposeFile": [
+		"docker-compose.yaml"
+	],
+	"service": "devcontainer",
+	"workspaceFolder": "/workspaces/app"
 }

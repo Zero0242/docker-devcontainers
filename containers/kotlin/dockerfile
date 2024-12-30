@@ -2,7 +2,7 @@ FROM openjdk:24-ea-17-jdk-slim-bullseye
 WORKDIR /workspaces/app
 
 # Instalaciones
-RUN apt-get update && apt-get install -y maven git curl zsh && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y maven git curl zsh zip unzip && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Oh My Zsh
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
@@ -12,3 +12,7 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh
     && echo "source ~/.plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc \
     && git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.plugins/zsh-syntax-highlighting \ 
     && echo "source ~/.plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
+
+# Install SDK Man
+RUN curl -s https://get.sdkman.io | bash 
