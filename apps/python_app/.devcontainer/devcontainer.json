@@ -14,15 +14,15 @@
 		},
 		"vscode": {
 			"extensions": [
+				/* Python */
 				"ms-python.python",
-				"ms-python.isort",
-				"ms-python.vscode-pylance",
 				"ms-python.debugpy",
-				"ms-python.autopep8",
-				"ms-python.pylint",
-				// "tushortz.python-extended-snippets",
-				"LittleFoxTeam.vscode-python-test-adapter",
+				/* Tools */
 				"njpwerner.autodocstring",
+				"LittleFoxTeam.vscode-python-test-adapter",
+				"ms-toolsai.jupyter",
+				/* Linters: ruff reemplaza autopep8-formatter, pylance y isort */
+				"charliermarsh.ruff",
 				/* Rest */
 				"formulahendry.code-runner",
 				"IgorSbitnev.error-gutters",
