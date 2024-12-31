@@ -32,8 +32,6 @@ Extensiones de uso general que pueden ser utilidades o temas, recomendado usar a
 - `adpyke.codesnap` [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - `inu1255.easy-snippet` [Easy Snippet](https://marketplace.visualstudio.com/items?itemName=inu1255.easy-snippet)
 - `usernamehw.errorlens` [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-- `AykutSarac.jsoncrack-vscode` [Json Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
-- `kisstkondoros.vscode-gutter-preview` [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
 - `bierner.markdown-mermaid` [Markdown Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 - `PKief.material-icon-theme` [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - `quicktype.quicktype` [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
@@ -48,8 +46,18 @@ Extensiones que son utiles para el desarrollo de api en general
 - `rohinivsenthil.postcode` [Postcode](https://marketplace.visualstudio.com/items?itemName=rohinivsenthil.postcode)
 - `humao.rest-client` [REST CLIENT](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 - `ckolkman.vscode-postgres` [PostgreSQL](https://marketplace.visualstudio.com/items?itemName=ckolkman.vscode-postgres)
-- `cweijan.vscode-database-client2` [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
 - `zxh404.vscode-proto3` [Proto3](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3)
+
+## Utils
+
+- `GrapeCity.gc-excelviewer` [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+  - para visualizar archivos excel
+- `cweijan.vscode-database-client2` [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
+  - visualizacion de bases de datos
+- `AykutSarac.jsoncrack-vscode` [Json Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
+  - visualizacion de json en modo visual
+- `kisstkondoros.vscode-gutter-preview` [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
+  - visualizacion de previews de imagenes en el editor de codigo
 
 ## Docker
 
