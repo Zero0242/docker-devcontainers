@@ -54,6 +54,8 @@ Extensiones que son utiles para el desarrollo de api en general
   - para visualizar archivos excel
 - `cweijan.vscode-database-client2` [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
   - visualizacion de bases de datos
+- `alexcvzz.vscode-sqlite` [Sqlite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
+  - Herramientas de sqlite
 - `AykutSarac.jsoncrack-vscode` [Json Crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode)
   - visualizacion de json en modo visual
 - `kisstkondoros.vscode-gutter-preview` [Image Preview](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview)
