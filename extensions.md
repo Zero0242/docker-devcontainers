@@ -50,6 +50,8 @@ Extensiones que son utiles para el desarrollo de api en general
 
 ## Utils
 
+- `tomoki1207.pdf` [PDF Viewer](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
+  - previsualizacion de pdfs en vscode
 - `GrapeCity.gc-excelviewer` [Excel Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
   - para visualizar archivos excel
 - `cweijan.vscode-database-client2` [Database Client](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-database-client2)
