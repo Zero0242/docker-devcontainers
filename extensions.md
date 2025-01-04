@@ -71,3 +71,9 @@ Extensiones especificas de docker , devcontainer y k8s.
 - `ms-vscode-remote.remote-containers`[Devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - `ms-azuretools.vscode-docker` [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - `ms-kubernetes-tools.vscode-kubernetes-tools` [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)
+
+## Bash
+
+- `Remisa.shellman` [Shell Man](https://marketplace.visualstudio.com/items?itemName=Remisa.shellman)
+- `foxundermoon.shell-format` [Shell Format](https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format)
+- `rogalmic.bash-debug` [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)
